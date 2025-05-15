@@ -1,0 +1,39 @@
+1. Run
+   In your project folder, execute:
+     python main.py
+   By default you’re in debug mode (you’ll enter dates manually).
+
+2. Initial Setup
+   Enter total skis and snowboards when prompted.
+
+3. Main Menu
+   Choose one:
+     1) New Customer Rental
+     2) Rental Return
+     3) Show Inventory
+     4) End of Day & Exit
+
+4. New Customer Rental
+   • Enter name & unique ID
+   • Specify skis/snowboards counts
+   • Choose rental type (1=hourly, 2=daily, 3=weekly)
+   • Enter duration (hours/days/weeks)
+   • (Optional) discount code
+   • Confirm inventory check, cost estimate, then complete rental.
+
+5. Rental Return
+   • Enter customer ID
+   • In debug: type return time as M:D:Y:HH:MM; otherwise it uses system clock
+   • View final invoice with duration and total cost.
+
+6. Show Inventory
+   Displays current ski & snowboard counts.
+
+7. End of Day
+   Prints total rentals and revenue, then exits.
+
+Switch to live-time mode:
+In main.py, change
+  ui = RentalUI(True)
+to
+  ui = RentalUI(False)
